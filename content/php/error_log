@@ -1,0 +1,30 @@
+[15-Aug-2022 15:35:02 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php:2207
+Stack trace:
+#0 /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php(1996): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 15 A...', 'How can I get 2...')
+#2 /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/aliagha77/public_html/illumidreams.com/content/php/contactform.php(44): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2207
+[15-Aug-2022 15:55:29 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php:2207
+Stack trace:
+#0 /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php(1996): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 15 A...', 'Can we get bett...')
+#2 /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/aliagha77/public_html/illumidreams.com/content/php/contactform.php(44): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2207
+[15-Aug-2022 16:04:52 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): Peer certificate CN=`*.prod.iad2.secureserver.net' did not match expected CN=`localhost' in /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php:2173
+Stack trace:
+#0 /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php(1996): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 15 A...', 'I wanted to see...')
+#2 /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/aliagha77/public_html/illumidreams.com/content/php/contactform.php(44): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/aliagha77/public_html/illumidreams.com/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2173
+[17-Mar-2023 20:53:48 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPMailer' not found in /home/aliagha77/public_html/illumidreams.com/content/php/contactform.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/aliagha77/public_html/illumidreams.com/content/php/contactform.php on line 2
+[17-Mar-2023 21:11:19 UTC] PHP Notice:  Undefined variable: message in /home/aliagha77/public_html/illumidreams.com/content/php/contactform.php on line 6
+[17-Mar-2023 21:15:41 UTC] PHP Notice:  Undefined index: message in /home/aliagha77/public_html/illumidreams.com/content/php/contactform.php on line 5

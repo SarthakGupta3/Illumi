@@ -1,0 +1,198 @@
+/* .contact-header{
+    background-color: #05080d;
+    position: absolute;
+    height: 60px;
+} */
+
+/* .contact-header li > a {
+    padding: 10px !important;
+}
+
+.contact-header .logo > a{
+    padding :10px !important
+}
+
+.contact-header .action_button{
+    top:30px
+} */
+
+
+.custom-fsize{
+	font-size: 1.3rem;
+}
+
+#Header_wrapper{
+    background-position: bottom right !important;
+}
+
+.background-container{
+    height: 700px;
+}
+
+.brand-logo{
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.background-style-contact{
+    background-image: url('/content/images/pic40.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.audio-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.audio-wrapper > span{
+    white-space: nowrap;
+    width: 100%;
+    margin-left:0.75rem;
+    text-align:left;
+}
+
+.audio-button{
+    width: 25px;
+    height: 25px;
+    margin-left: 0.2rem;
+    cursor: pointer;
+}
+
+.home-image{
+    width: 500px !important;
+    height: 350px !important;
+    margin-left: 9rem
+}
+
+#contactform input, textarea{
+    font-size: 20px !important;
+}
+
+#contactform input::placeholder, textarea::placeholder{
+    font-size: 20px;
+}
+
+
+.contact-submit-button{
+    width: max-content !important;
+    font-size: 20px;
+}
+
+.playlist-header, .playlist-content{
+    width: 100%;
+    display: flex;
+}
+
+.playlist-header > h4{
+    margin-left: 2rem;
+}
+
+/* .playlist-content{
+    margin-bottom: 6rem;
+} */
+
+.playlist-content img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.list_custom li{
+    margin-left:0.6rem
+}
+
+.list1 li:nth-child(-n+9){
+    margin-left: 0.25rem;
+}
+
+
+
+.list_custom{
+    margin: 0 !important;
+    margin-top:1rem !important;
+    margin-bottom: 1rem !important;
+    margin-left: 1rem !important;
+    white-space: nowrap;
+    width: 30%;
+}
+
+
+.image-container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.multi-image-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.multi-image-container img{
+    width: 80%;
+    margin-bottom: 12rem;
+}
+
+#ambient-sounds{
+    background-image: url(../images/ambientsounds.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#lullabies-sounds{
+    background-image: url(../images/lullabies.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-image{
+        width: 200px !important;
+        height: 140px !important;
+        margin-left: 9rem
+    }
+    .playlist-header{
+        display: block;
+    }
+
+    .playlist-header h4{
+        margin-left :0;
+    }
+
+    .playlist-content{
+        flex-direction: column-reverse;
+    }
+
+    .image-container{
+        width: 100%;
+        height: 100px;
+    }
+
+    #lullabies-sounds{
+        background-position: 0px -80px;
+    }
+
+    .multi-image-container{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2rem;
+    }
+
+    .multi-image-container img{
+        width: 20%;
+        height: 40px;
+        margin-bottom: 0rem;
+        margin-right: 2rem;
+    }
+
+    .background-container{
+        background-position: left !important;
+        background-size: cover !important;
+    }
+}

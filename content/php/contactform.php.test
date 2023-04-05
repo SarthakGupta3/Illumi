@@ -1,0 +1,98 @@
+<?php
+ // configuration
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require '../../vendor/autoload.php';
+
+$mail = new PHPMailer(true);
+
+$name=$_POST['name'];
+$from=$_POST['email'];
+$subject=$_POST['subject'];
+$body=$_POST['body'];
+
+// $to="support@illumidreams.com";
+
+// $headers = "MIME-Version: 1.0" . "\r\n";
+// $headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
+// $headers .= "From: <$from>\r\n ";
+
+
+$mail->isSMTP();
+
+$mail->Host = 'localhost';
+$mail->Port = 25;
+$mail->SMTPAuth = false;
+// $mail->SMTPSecure = 'none';
+
+
+$mail->isSendMail();
+
+// // put the email id here.
+$mail->Username='support@illumidreams.com';
+
+// // put the app password for email id here.
+$mail->Password = 'Alitesting911';
+
+$mail->setFrom($email, $name);
+$mail->addAddress('contactform@illumidreams.com');
+
+// $mail->isHTML(true);
+$mail->Subject = $subject;
+$mail->Body    = $body;
+$mail->AddReplyTo($email);
+
+if(!isset($name) || !isset($email) || !isset($subject) || !isset($body)) {
+	echo "One of the fields empty";
+    die();
+}
+
+if($mail->Send()){
+    echo "Succesful";
+} else 
+    echo "Failed";
+// $email_it_to = "support@illumidreams.com";
+// $error_message = "Please complete the form first";
+
+// // $rnd=$_POST['rnd'];
+// $name=$_POST['name'];
+// $email=$_POST['email'];
+// $subject=$_POST['subject'];
+// $body=$_POST['body'];
+
+// echo $name;
+
+// if(!isset($name) || !isset($email) || !isset($subject) || !isset($body)) {
+// 	echo $error_message;
+//     die();
+// }
+
+
+// $subject = stripslashes($subject);
+// $email_from = $email;
+
+// $email_message = "Message submitted by '".stripslashes($name)."', email:".$email_from;
+// $email_message .=" on ".date("d/m/Y")."\n\n";
+// $email_message .= stripslashes($body);
+// $email_message .="\n\n";
+
+// // Always set content-type when sending HTML email
+
+
+// $headers = "MIME-Version: 1.0" . "\r\n";
+// $headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
+// $headers .= 'From: '.stripslashes($name);
+
+
+// if(mail($email_it_to,$subject,$email_message,$headers)){
+//     echo "Successful";
+// } else {
+//     echo "Some Error";
+// }
+
+
+
+?>
