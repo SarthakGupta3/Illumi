@@ -150,7 +150,6 @@
 
         .fs-xl {
             font-size: 3.5rem;
-            line-height: 3.5rem;
         }
 
         .fw-400 {
@@ -452,6 +451,9 @@
             margin-left: 2rem;
         }
 
+
+
+
         @media only screen and (max-width: 1296px) {
             #product-details-wrapper {
                 padding: 2rem 3rem;
@@ -488,6 +490,102 @@
 
             .buy-now-footer>div>p {
                 text-align: right;
+            }
+        }
+
+
+        @media only screen and (max-width: 596px) {
+
+            .fs-xl {
+                font-size: 2.5rem;
+            }
+
+            .fs-l {
+                font-size: 2rem;
+            }
+
+            .fs-m{
+                font-size: 1.75rem;
+            }
+
+            #product-details-wrapper {
+                padding: 1rem;
+                flex-direction: column;
+            }
+
+            #details-wrapper {
+                padding: 0;
+            }
+
+            .product-details {
+                padding: 0;
+                margin-top: 4rem;
+            }
+
+            .product-description>p {
+                margin-bottom: 2rem;
+            }
+
+            .product-description>ul {
+                margin-bottom: 1rem;
+            }
+
+            .video-gallery {
+                padding: 1rem;
+            }
+
+            .video-section-heading{
+                margin-bottom: 2rem;
+            }
+
+            .video-section-left-align,
+            .video-section-right-align {
+                flex-direction: column;
+                margin-top: 2rem;
+            }
+
+            .video-section-left-align>.video-details {
+                margin: 0;
+            }
+
+            .video-section-right-align>.video-details {
+                margin: 0;
+            }
+
+            .video-section-right-align>.video-details>p {
+                text-align: left;
+            }
+
+            .video-details>p {
+                margin: 0;
+                margin-top: 1.2rem !important;
+                line-height: 1.2rem !important;
+            }
+
+            .video-details>.video-description {
+                margin: 0;
+                margin-top: 0.75rem !important;
+            }
+
+            .bl-btn {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin: auto;
+            }
+
+            .mid-section {
+                margin-top: 2rem;
+            }
+
+            .buy-now-footer {
+                width: 90%;
+                margin: 2rem auto;
+            }
+
+            .buy-now-footer>div>p {
+                text-align: right;
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -674,8 +772,10 @@
                 <div id="details-wrapper">
                     <div class="product-details">
                         <div style="display: flex;">
-                            <p class="color-black fw-500 fs-xl">Illumi Dreams</p>
-                            <p class="color-black fw-500 fs-l" style="margin-left: auto;">$39.99<span
+                            <p class="color-black fw-500 fs-xl" style="line-height: 3.5rem;margin-top: auto;">Illumi
+                                Dreams</p>
+                            <p class="color-black fw-500 fs-l"
+                                style="margin-left: auto;line-height: 3.5rem;margin-top: auto;">$39.99<span
                                     class="fw-500 fs-m">USD</span></p>
                         </div>
 
@@ -795,7 +895,8 @@
             </div>
 
             <div class="video-gallery">
-                <p class="fs-xl color-black video-section-heading">LISTEN TO SOME OF OUR SAMPLES BELOW</p>
+                <p class="fs-xl color-black video-section-heading" style="line-height: 3.5rem;">LISTEN TO SOME OF OUR
+                    SAMPLES BELOW</p>
 
                 <div class="video-section-left-align">
                     <iframe class="video-container" src="https://www.youtube.com/embed/X8bCnGQuy2M?loop=1&controls=1">
