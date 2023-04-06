@@ -87,7 +87,7 @@
             color: lightgrey;
         }
 
-        #loader-wrapper{
+        #loader-wrapper {
             width: 100%;
             height: 100vh;
             display: flex;
@@ -150,6 +150,7 @@
 
         .fs-xl {
             font-size: 3.5rem;
+            line-height: 3.5rem;
         }
 
         .fw-400 {
@@ -160,7 +161,7 @@
             font-weight: 500;
         }
 
-        #Wrapper{
+        #Wrapper {
             display: none;
         }
 
@@ -235,23 +236,37 @@
 
         .buy-button {
             width: 100%;
-            margin-top: 0.25rem
+            margin-top: 0.25rem;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bl-btn {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            margin: auto;
         }
 
         .product-description {
-            padding-bottom: 1rem;
+            padding-bottom: 1.5rem;
             margin: 0;
-            border-bottom: 1.5px solid lightgray
+            border-bottom: 1.5px solid lightgray;
+            line-height: 1.75rem;
         }
 
-        .item-description-list>li {}
-
         .item-description-list>li::before {
-            content: '\002B';
-            font-size: 1rem;
-            color: black;
-            font-weight: bold;
-            margin-right: 0.5rem;
+            content: '\2713';
+            display: inline-block;
+            color: green !important;
+            padding: 0 6px 0 0;
+        }
+
+        .item-description-list>li {
+            list-style-type: none;
+            font-size: 1.2rem;
         }
 
 
@@ -319,7 +334,34 @@
         .mid-section {
             width: 100%;
             background-color: black;
-            height: 200px;
+            /* height: 200px; */
+        }
+
+        .middle-section-item-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .middle-section-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+            /* flex: 1; */
+        }
+
+        .middle-section-item>img {
+            margin-bottom: 1.5rem;
+            width: 75px;
+            aspect-ratio: 1;
+        }
+
+        .middle-section-item>p {
+            width: 80%;
+            text-align: center;
+            margin: 0;
         }
 
         .video-gallery {
@@ -391,18 +433,62 @@
         .buy-now-footer>div {
             flex: 1;
             border-right: 1px solid lightgray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .buy-now-footer>div>p {
             text-align: right;
             margin: 0;
-            padding: 0.2rem;
+            padding: 0.5rem;
             margin-right: 2rem;
         }
 
-        .buy-now-footer>button {
+        .buy-now-footer>a {
             flex: 1;
+            display: flex;
+            align-items: center;
             margin-left: 2rem;
+        }
+
+        @media only screen and (max-width: 1296px) {
+            #product-details-wrapper {
+                padding: 2rem 3rem;
+                flex-direction: column;
+            }
+
+            #details-wrapper {
+                padding: 0;
+            }
+
+            .product-details {
+                padding: 0;
+                margin-top: 4rem;
+            }
+
+            .video-gallery {
+                padding: 2rem 5rem;
+            }
+
+            .bl-btn {
+                display: flex;
+                justify-content: space-between;
+                /* width: 100%; */
+                margin: auto;
+            }
+
+            .mid-section {
+                margin-top: 2rem;
+            }
+
+            .buy-now-footer {
+                width: 80%;
+            }
+
+            .buy-now-footer>div>p {
+                text-align: right;
+            }
         }
     </style>
 </head>
@@ -427,14 +513,14 @@
                                 <div class="menu_wrapper">
                                     <nav id="menu">
                                         <ul id="menu-main-menu" class="menu menu-main">
-                                            <li class=" current-menu-item page_item current_page_item">
+                                            <li>
                                                 <a href="index.html"><span>HOME</span></a>
                                             </li>
                                             <li>
                                                 <a href="starprojector/instructionandplaylist/btsp-1001/manual-playlist.pdf"
                                                     target="_blank"><span>USER MANUAL AND PLAYLIST</span></a>
                                             </li>
-                                            <li>
+                                            <li class=" current-menu-item page_item current_page_item">
                                                 <a href="landing/landingpage.html"
                                                     target="_blank"><span>PRODUCT</span></a>
                                             </li>
@@ -597,9 +683,10 @@
                         <hr style="height:1.5px;">
                         <p class="color-black fs-s fw-400">Package contents</p>
                         <img src="./package-contents.jpg">
-                        <button class="buy-button fs-s">Buy Now</button>
+                        <a href="https://www.amazon.com/dp/B0BGCDV93B?maas=maas_adg_2BB846C2E014B378A692F5B63E74EFFD_afap_abs&ref_=aa_maas&tag=maas"
+                            target="_blank"><button class="buy-button fs-s"><img src="./buy-now.jpg"></button></a>
 
-                        <div style="display: flex;justify-content: space-between;width: 50%;margin: auto;">
+                        <div class="bl-btn">
                             <p class="color-black">FREE 2 DAY DELIVERY</p>
                             <p class="color-black">30 DAYS RISK FREE</p>
                         </div>
@@ -607,51 +694,104 @@
 
 
                         <div class="product-description">
-                            <p class="fs-xs color-lightgray ">Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Numquam consequuntur, recusandae perspiciatis rem tempora
-                                suscipit beatae, ratione repellendus animi, in doloribus saepe aperiam perferendis
-                                accusantium obcaecati itaque odit tempore a.</p>
+                            <p class="color-lightgray" style="font-size: 1.4rem;">The Illumi Dreams star projector is
+                                the most advanced multimedia star projector that will entertain your kids for hours. The
+                                3D light show and bedtime stories makes going to bed fun! It also makes a great night
+                                light.</p>
 
                             <ul class="item-description-list">
-                                <li class="color-black">Item 1</li>
-                                <li class="color-black">Item 2</li>
-                                <li class="color-black">Item 3</li>
+                                <li class="color-black">21 different 3D light shows (10 color variations)</li>
+                                <li class="color-black">125 bedtime stories, 20 ambient sounds, 20 classic lullabies
+                                </li>
+                                <li class="color-black">Bluetooth speaker (listen to music and podcasts)</li>
+                                <li class="color-black">Remote controlled with sleep timers (1hr / 2hr / auto 8hr sleep)
+                                </li>
+                                <li class="color-black">3 brightness levels and 3 speed settings</li>
                             </ul>
                         </div>
 
 
 
 
-                        <p class="accordion fs-xs color-black">Question 1</p>
+                        <p class="accordion fs-xs color-black">How do I play the bedtime stories, ambient sounds, and
+                            classic lullabies?</p>
                         <div class="panel">
-                            <p class="color-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Praesentium, est id, assumenda quia quidem fugiat ducimus sequi pariatur quas neque
-                                voluptates soluta, consectetur hic. Necessitatibus, molestias! Quia explicabo vel amet?
+                            <p class="color-black">All of the audio files are located on our micro USB drive that is
+                                included with your purchase. Simply plug the USB drive into the back side of the star
+                                projector and enjoy.
                             </p>
                         </div>
 
-                        <p class="accordion fs-xs color-black">Question 2</p>
+                        <p class="accordion fs-xs color-black">Can I play the bedtime stories, ambient sounds, and
+                            classic lullabies in the car?</p>
                         <div class="panel">
-                            <p class="color-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Praesentium, est id, assumenda quia quidem fugiat ducimus sequi pariatur quas neque
-                                voluptates soluta, consectetur hic. Necessitatibus, molestias! Quia explicabo vel amet?
+                            <p class="color-black">Yes, simply plug our micro USB drive into your vehicles USB port and
+                                your children can listen to all of our bedtime stories, ambient sounds, and classic
+                                lullabies while you drive.
+                                Technical specifications
+
+
+
+                                - Weight = 1 lb
+                                - Dimensions = L 6.25” x W 4.75” x H 4.50”
+                                - Material = Plastic
+                                - Power = USB 5v2A power adaptor
+                                - Speakers = 3w x 2
+                                - LED power = 4w x 2
+                                - Remote Range = 33 feet
                             </p>
                         </div>
 
-                        <p class="accordion fs-xs color-black">Question 3</p>
+                        <!-- <p class="accordion fs-xs color-black">Question 3</p>
                         <div class="panel">
                             <p class="color-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Praesentium, est id, assumenda quia quidem fugiat ducimus sequi pariatur quas neque
                                 voluptates soluta, consectetur hic. Necessitatibus, molestias! Quia explicabo vel amet?
                             </p>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
             </div>
 
             <div class="mid-section">
-
+                <div class="middle-section-item-container">
+                    <div class="middle-section-item">
+                        <img src="./icon - ambient sounds.png">
+                        <hr style="color:white">
+                        <p>Some text description</p>
+                    </div>
+                    <div class="middle-section-item">
+                        <img src="./icon - ambient sounds.png">
+                        <hr style="color:white">
+                        <p>Some text description</p>
+                    </div>
+                    <div class="middle-section-item">
+                        <img src="./icon - ambient sounds.png">
+                        <hr style="color:white">
+                        <p>Some text description</p>
+                    </div>
+                    <div class="middle-section-item">
+                        <img src="./icon - ambient sounds.png">
+                        <hr style="color:white">
+                        <p>Some text description</p>
+                    </div>
+                    <div class="middle-section-item">
+                        <img src="./icon - ambient sounds.png">
+                        <hr style="color:white">
+                        <p>Some text description</p>
+                    </div>
+                    <div class="middle-section-item">
+                        <img src="./icon - ambient sounds.png">
+                        <hr style="color:white">
+                        <p>Some text description</p>
+                    </div>
+                    <div class="middle-section-item">
+                        <img src="./icon - ambient sounds.png">
+                        <hr style="color:white">
+                        <p>Some text description</p>
+                    </div>
+                </div>
             </div>
 
             <div class="video-gallery">
@@ -709,7 +849,8 @@
                     <p class="color-black fs-l">Illumi Dreams</p>
                     <p class="color-black fs-m">Start Projector</p>
                 </div>
-                <button class="buy-button fs-s">Buy Now</button>
+                <a href="https://www.amazon.com/dp/B0BGCDV93B?maas=maas_adg_2BB846C2E014B378A692F5B63E74EFFD_afap_abs&ref_=aa_maas&tag=maas"
+                    target="_blank"><button class="buy-button fs-s"><img src="./buy-now.jpg"></button></a>
             </div>
 
         </div>
@@ -832,8 +973,7 @@
         let mainWrapper = document.getElementById('Wrapper')
         let loader = document.getElementById('loader-wrapper')
         document.addEventListener('readystatechange', (event) => {
-            if(document.readyState === 'complete'){
-                console.log('here')
+            if (document.readyState === 'interactive') {
                 mainWrapper.style.display = 'block'
                 loader.style.display = 'none'
             }
