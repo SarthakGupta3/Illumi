@@ -191,7 +191,7 @@
         }
 
         #product-details-wrapper {
-            padding: 2rem 12rem;
+            padding: 2rem 20rem;
             display: flex;
         }
 
@@ -248,7 +248,7 @@
         .bl-btn {
             display: flex;
             justify-content: space-between;
-            width: 80%;
+            width: 100%;
             font-weight: 600;
             margin: auto;
         }
@@ -337,7 +337,7 @@
         .mid-section {
             width: 100%;
             background-color: black;
-            padding: 2rem 10rem;
+            padding: 2rem 20rem;
             box-sizing: border-box;
             /* height: 200px; */
         }
@@ -353,14 +353,18 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 1rem;
+            padding: 0.25rem 1rem;
             /* flex: 1; */
         }
 
         .middle-section-item>img {
-            margin-bottom: 1.5rem;
-            width: 75px;
+            margin-bottom: 0.75rem;
+            width: 60px;
             aspect-ratio: 1;
+        }
+
+        .middle-section-item>hr {
+            margin-bottom: 0.75rem;
         }
 
         .middle-section-item>p {
@@ -370,7 +374,7 @@
         }
 
         .video-gallery {
-            padding: 2rem 10rem;
+            padding: 2rem 20rem;
         }
 
         .video-section-heading {
@@ -457,7 +461,11 @@
             margin-left: 2rem;
         }
 
-
+        @media only screen and (max-width: 1600px) {
+            .middle-section-item {
+                padding: 1rem;
+            }
+        }
 
 
         @media only screen and (max-width: 1296px) {
@@ -467,7 +475,7 @@
             }
 
 
-            .mid-section{
+            .mid-section {
                 padding: 2rem 3rem;
             }
 
@@ -494,6 +502,7 @@
             .mid-section {
                 margin-top: 2rem;
             }
+
 
             .buy-now-footer {
                 width: 80%;
@@ -524,7 +533,7 @@
                 flex-direction: column;
             }
 
-            .mid-section{
+            .mid-section {
                 padding: 1rem;
             }
 
